@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Products and Vendors</title>
+    <title>Products and vendors</title>
 
     <meta charset="UTF-8">
 
@@ -17,8 +17,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 
 </head>
 
@@ -26,21 +24,22 @@
     <div class="container">
         <center>
 
-            <!-- <div class="btn-group" role="group">
-                <a class="btn btn-warning btn-sm" href="/suppliers">Manage suppliers</a>
-                <a class="btn btn-success btn-sm" href="/products">Manage products</a>
-                <a class="btn btn-info btn-sm" href="http://careeria.fi">Recruit code professionals</a>
-                <a class="btn btn-primary btn-sm" href="/admin">Admin pages</a>
-                <a class="btn btn-danger btn-sm">Logout</a>
-            </div> -->
+            <div class="card" style="width: 25rem; margin-top: 50px;">
+                <div class="card-header">
 
-            {% block content %}
+                    <h4>Wrong credentials</h4>
 
-            {% endblock %}
+                    <div class="card-body">
+                        <input type="button" onclick="window.location.href='/'" id="hide-btn"
+                            class="btn btn-secondary btn-sm" value="Try again">
 
+                    </div>
+                </div>
+            </div>
         </center>
     </div>
 
 </body>
+
 
 </html>
